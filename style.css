@@ -1,0 +1,108 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a52e07;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-top: 60px; /* To prevent overlap with navbar */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px; /* 30px gap between rows */
+}
+
+/* Ensure exactly 3 cards per row */
+.card-wrapper {
+    width: calc(33.33% - 20px); /* Adjust width for 3 cards per row */
+    display: flex;
+    row-gap: 40px;
+}
+
+/* Make all cards the same height */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Set fixed height for images and make them responsive */
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Ensure card content takes up equal space */
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Birds & Animals Section Centering */
+.birds, .animals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.col-md-4 {
+    margin-bottom: 40px; /* Adds spacing between rows */
+}
